@@ -1,0 +1,100 @@
+ * {
+	box-sizing: border-box;
+}
+body {
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #1a1830;
+}
+.container:before, .container:after {
+	content: " "; 
+	display: table; 
+	clear: both;
+} 
+ .container {
+ 	max-width: 1200px;
+ 	margin: 0 auto;  
+ }
+/*nawigacja*/
+nav {
+	background-color: #212528;
+}
+nav ul {
+	padding: 0;
+	margin:0;
+	list-style-type: none; 
+	display: inline-block;
+	float:right;
+}
+nav ul li {
+	display: inline-block;
+}
+nav ul li a {
+	display: block;
+    line-height: 57px;
+	padding: 0 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 20px;
+}
+nav ul li a:hover {
+	background-color: #444d53;
+}
+nav img {
+	margin-top: 5px;
+}
+/*hero*/
+header {
+	background-image: url("https://hd.unsplash.com/photo-1461673552572-51af4cbbe51a");
+	background-size: cover;
+    background-attachment: fixed;
+	height: 40vw;
+	text-align:center;
+	color:white;
+	font-size: 10vw;
+	padding-top: 5px;
+}
+/*gallery*/
+.photo {
+	width: 33.33%;
+	height: 60vw;
+	display:inline-block;
+	float:left;
+	padding: 20px;
+	border-radius:15px;
+}
+.photo:hover {
+	opacity:.5
+}
+.photo img {
+	width: 100%;
+	border-radius:15px;
+}
+/*map*/
+.map img {
+	width: 100%;
+}
+/*footer*/
+footer {
+	background-color: #212528;
+	color: white;
+	font-size: 15px;
+}
+@media (max-width: 768px) {
+	nav ul {
+	display: block;
+	width: 100%;
+}
+nav ul li {
+	display: block;
+	margin: .5vh;
+}
+.photo {
+	width:100%;
+	float:none
+}
+.container {
+	text-align: center;
+}
+}
